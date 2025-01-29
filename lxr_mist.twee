@@ -1,0 +1,527 @@
+:: StoryTitle
+mist
+
+
+:: StoryData
+{
+  "ifid": "9DB5E56E-8CF7-4BCD-B7CB-6CBA56165E28",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Node puzzle",
+  "zoom": 0.6
+}
+
+
+:: End {"position":"975,875","size":"100,100"}
+<div style="
+  background: url('https://img.freepik.com/free-vector/old-cemetery-night-realistic-vector-with-sloping-gravestones-covered-thick-fog-darkness-illust_33099-1051.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 70vh; (bg:navy)[Your Text Here]
+
+">
+The mists quickly engulf the light around you, and an icy whisper comes to your ears, “Wisdom cannot guide you, the price will come.” You feel a bone-chilling chill, and then lose consciousness.
+
+
+:: Ending: Freedom {"position":"1025,2125","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/0/1/6/0162ebc1-5af4-484b-832f-ed86ebb09b20_large/mysterious-foggy-ship-stockcake.jpg');
+  background-size: cover;
+   height: 110vh; (bg:navy)">
+You board that ship, the waves lapping at the hull, taking you in an unknown direction. You are finally free of the mists.
+
+However, as you close your eyes and try to feel your long lost freedom, the familiar whispering voice comes back to your ears, “Find the key ...... or you will stay here forever.”
+
+[[<span class="twine-link">Back to the Beginning|Node 1]]
+
+
+:: Ending: Truth {"position":"1150,2125","size":"100,100"}
+<div style="
+  background: url('https://img.freepik.com/free-vector/realistic-fog-background_23-2149115274.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You choose to step into the abyss in pursuit of the whispers of truth. An eerie light emanates from the abyss, and mists swirl around you.
+
+When you finally see the truth, an intense feeling of vertigo hits you, and the scenery around you begins to distort and collapse. You hear a low voice: “The cycle will continue.”
+
+
+[[<span class="twine-link">Back to the Beginning|Node 1]]
+
+
+:: Node 1 {"position":"600,275","size":"200,200"}
+<div style="
+  background: url('https://img.freepik.com/premium-photo/sinking-abandoned-ship-seashore-clear-sky_926199-2336427.jpg');
+    background-size: cover;
+">
+  <p>You wake up from your stupor, damp sand covering your arms. Looking up and around, it's a barren coast with shipwrecks and broken planks strewn about. The air is heavy with a salty odor that gives you a wave of nausea.</p>
+  <p>Beside you, a damp map is slightly yellowed. You pick it up and find three vague locations marked on it: 'Forest' 'Shoreline' 'Center area'. A cold wind sweeps by, bringing with it the sound of a low whisper: <span class="low-whisper" id="low-whisper"></span></p>
+
+[[<span class="twine-link">Explore into the forest|Node 2]]  
+[[<span class="twine-link">Moving along the coastline|Node 3]]
+</div>
+
+<script>
+  const text = "Find the key... or be lost forever.";
+  const element = document.getElementById("low-whisper");
+  let i = 0;
+
+  function typeEffect() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 100); 
+    }
+  }
+
+  typeEffect();
+</script>
+
+
+:: Node 10 {"position":"650,1000","size":"100,100"}
+<div style="
+  background: url('https://149358889.v2.pressablecdn.com/wp-content/uploads/blog-forest-light-5.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+You carefully take the talisman from the old man's hand, and the moment you first touch it, a warmth rushes through your entire body from your palm. The surface of the talisman glows slightly, like some kind of breathing rhythm. The mist around you seems to be dispersed a bit, and you can vaguely see further away.
+
+At the same time, you feel a slight headache, and a number of broken memories begin to surface in your mind - the tower, the fog, and a vague fight. These memories feel both familiar and strange to you, as if they belong to some forgotten past.
+
+“You chose power, but you also chose a price.”
+
+
+[[<span class="twine-link">Follow the Talisman's Guidance|Node 11]]
+
+
+:: Node 11 {"position":"650,1125","size":"100,100"}
+<div style="
+  background: url('https://149358889.v2.pressablecdn.com/wp-content/uploads/blog-forest-light-5.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+The amulet's glow grows stronger and it seems to be guiding you. You follow the talisman's guidance through a thick forest. Suddenly, you find yourself in an open area with a mechanical device placed in the center of the ground.
+
+The top of this device has three grooves, one of which is shaped to exactly match the amulet. The device is inscribed with ancient runes, the words are blurred, but you recognize the words “key”, “three parts”, and “truth”.
+
+The whisper in your ear becomes clearer: “Place the talisman and it will guide you deeper.”
+
+[[<span class="twine-link">Place Talisman in Device|Node 12]]
+
+
+:: Node 12 {"position":"850,875","size":"100,100"}
+<div style="
+  background: url('https://www.gameskinny.com/wp-content/uploads/2023/08/baldurs-gate-3-how-to-solve-the-stone-disc-puzzle.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 70vh; (bg:navy)[Your Text Here]
+
+">
+A slight sense of vibration came from the surface of the stone monument. A dazzling light suddenly shoots out from above the stone tablet, dispersing the surrounding mist for a moment. Immediately afterward, the words on the stone tablet began to slowly emerge, emitting a pale blue shimmer:
+
+“The sum of the numbers is the key, try to unlock it and the truth will unfold.”
+
+Just as you focus on the words, an inset slides out of the bottom of the monolith with a set of numbers engraved on it:
+“3, 8, 15, 24, ?”
+
+Next to the inset is another line of text:
+“Complete the sequence with your wits and the answers will guide you forward.”
+
+At the same time, you feel a tingling coming from your fingertips, as if some force is trying to stop you from continuing. The whispering voice in your ear grows clear: “Continue ...... or give up, the price is beginning to show.”
+
+
+[[<span class="twine-link">Try to solve the puzzle|Node puzzle]]
+[[<span class="twine-link">Give up and leave|End]]
+
+
+:: Node 13 {"position":"650,1250","size":"100,100"}
+<div style="
+  background: url('https://149358889.v2.pressablecdn.com/wp-content/uploads/blog-forest-light-5.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+You are on your way back to the forest when you encounter the mysterious old man again. He stands in the mist, his face even more haggard than last time, and a hint of worry in his eyes.
+
+“The key is the only way to freedom, but you need to understand that not all pieces are willing to be found.” His voice is low and slow, as if hiding some kind of unfinished business.
+
+You try to press for more, but the old man simply shakes his head and then disappears into the fog, leaving only a blurry figure behind.
+
+[[<span class="twine-link">Continue to the Misty Depths|Node 9]]
+
+
+:: Node 14 {"position":"825,1125","size":"100,100"}
+<div style="
+  background: url('https://i.pinimg.com/736x/41/3f/97/413f97ee1f8b137a5454b3c775f5b8cb.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 80vh; (bg:navy)">
+You grip the shard of metal tightly and feel a warm pulsation coming from your fingertips. The mists slowly disperse before you, revealing a narrow path. The shard's light flickers slightly, as if guiding you along.
+
+You walk for a long time and come to a fork in the trail. The path to the left is shrouded in a thicker mist, with a low hissing sound coming from it; while the path to the right is brighter, and the shard's glow gradually increases.
+
+[[<span class="twine-link">Follow the shard's glow|Node 16]]
+[[<span class="twine-link">Step into the Mist|Node 15]]
+
+
+:: Node 15 {"position":"912.5,1250","size":"100,100"}
+<div style="
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/045/826/343/small/the-dark-stage-shows-dark-background-an-empty-dark-scene-neon-light-and-spotlights-the-concrete-floor-and-studio-room-with-smoke-float-up-the-interior-texture-high-quality-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 80vh; (bg:navy)">
+You choose the trail to your left and the mist becomes thicker, obscuring your vision. The pavement becomes muddy beneath your feet, and the shadows of the trees around you seem to be slowly approaching. The whispers in your ears become more piercing, as if warning you not to proceed.
+
+Suddenly, your feet fall away and you plunge downwards into an unseen abyss. As darkness falls around you and the whispers fade away, you feel a wave of uncontrollable fear gripping you.
+
+[[<span class="twine-link">Restart Quest|Node puzzle]]
+
+
+:: Node 16 {"position":"775,1250","size":"100,100"}
+<div style="
+  background: url('https://img.freepik.com/premium-photo/circular-stone-platform-with-intricate-carvings-sits-center-chamber-surrounded-by-tall-weathered-pillars_885831-182603.jpg');
+  background-size: cover;
+   height: 100vh; (bg:navy)">
+As you follow the light of the shard, the mists gradually lift. You come to a tall stone archway covered in intricate runes that match the pattern on the shard exactly. The shard's light becomes brighter, as if responding to these runes.
+
+After passing through the archway, you find yourself standing on a massive circular stone platform. In the center of the stone platform is a pedestal with a groove in it, and the shape of the shard matches it exactly.
+
+[[<span class="twine-link">Place Shard in Pedestal|Node 17]]
+
+
+:: Node 17 {"position":"775,1375","size":"100,100"}
+<div style="
+  background: url('https://img.freepik.com/premium-photo/circular-stone-platform-with-intricate-carvings-sits-center-chamber-surrounded-by-tall-weathered-pillars_885831-182603.jpg');
+  background-size: cover;
+   height: 100vh; (bg:navy)">
+ As you place the shard into the pedestal, the stone platform emits a low rumbling sound, and the runes around it gradually glow, forming a rotating pillar of light that shoots straight up into the sky.
+
+A low voice echoes in the air, “The first seal has been lifted, two remain.”
+
+As the pillar of light disappeared, the stone platform cracked open, revealing two new paths: one extending downward into the depths of the earth, and the other leading to an even denser forest in the distance.
+
+[[<span class="twine-link">Follow the steps down|Node 18]]
+[[<span class="twine-link">Return to the forest to continue exploring|Node 19]]
+
+
+:: Node 18 {"position":"775,1500","size":"100,100"}
+<div style="
+  background: url('https://thumbs.dreamstime.com/b/massive-stone-door-beit-shearim-ancient-jewish-necropolis-israel-35836849.jpg');
+  background-size: cover;
+   height: 100vh; (bg:navy)">
+You follow the steps down into a vast underground chamber. The walls around you are carved with glowing runes, which seem to tell some ancient tale.
+
+In the center of the chamber is a massive stone door with three distinct grooves. You notice that one of the grooves is already lit up, obviously related to the shard that you just put in. The remaining two alcoves remain empty.
+
+[[<span class="twine-link">Find more clues in the secret room|Node 20]]
+
+
+:: Node 19 {"position":"900,1500","size":"100,100"}
+<div style="
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlGklBeB2ZupFycMNW9MH-2K6BeJqeiWLUA&s');
+  background-size: cover;
+   height: 100vh; (bg:navy)">
+You rejoin the forest and notice that the mists around you seem to have become thicker, and the air smells vaguely dangerous. You continue along the trail and find a worn out compass scattered on the ground.
+
+The needle of the compass is spinning, as if trying to point in some unknown direction.
+
+[[<span class="twine-link">Pick Up Compass|Node 21]]
+
+
+:: Node 2 {"position":"650,500","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/3/c/d/3cd6eaa5-c3d3-4f8c-a30e-cf2163b0cd52_large/misty-forest-morning-stockcake.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+You walk towards the forest, where the mists become thicker, like an invisible wall enveloping every tree. The air becomes damp and cold, and the dead leaves make a harsh sound underfoot. The silence around you was somewhat abnormal, only some kind of sound in the distance loomed, like someone whispering to you.
+
+“Keep going, or turn back.” A low voice suddenly rings in your ears, devoid of any emotion. You look around, but can't find the source of the voice.
+
+[[<span class="twine-link">Deeper into the Forest|Node 4]]
+[[<span class="twine-link">Return to the Coast|End]]
+
+
+:: Node 20 {"position":"775,1625","size":"100,100"}
+<div style="
+  background: url('https://www.marwynandjohn.uk/wp-content/uploads/2019/06/20190618_130839.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">In the dim light of the chamber, you notice that the runes on the walls form a huge map of the island. Three key locations are marked on the map: the first is the stone platform you just unlocked, the second is a towering tower, and the third is labeled “Heart of the Island”.
+
+The rune also mentions more clues, seemingly suggesting that each location holds important pieces that can only be gathered together to unlock the chamber's ultimate secret.
+
+[[<span class="twine-link">Go to Tower Exploration|Node 23]]
+
+
+:: Node 21 {"position":"975,1625","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/4/a/c/4ac7ff67-e464-4089-a99a-1c1f25ed2c6c_large/ancient-compass-guide-stockcake.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You pick up the compass on the ground and realize that its needle is spinning violently. Just at the moment you touch the compass, the needle suddenly stops and points in one direction. You feel an inexplicable force tugging at you, as if this direction hides something vital.
+
+The center of the compass suddenly glows faintly, and a vague symbol emerges from it. A hunch springs to your mind that this symbol is related to the remaining shards.
+
+[[<span class="twine-link">Follow the compass's guidance|Node 22]]
+
+
+:: Node 22 {"position":"1100,1625","size":"100,100"}
+<div style="
+  background: url('https://curiosmos.com/wp-content/uploads/2019/07/A-Standing-Stone-at-Night.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You follow the direction of the compass, and the mists around you seem to be dispersed by an invisible force. Gradually, you arrive at a clearing. In the center of the clearing towers an ancient stone monument, the surface of which is covered with mottled moss, and some runes can be vaguely seen.
+
+As you approach the monolith, the light of the compass suddenly intensifies, illuminating the text on the monolith. The text reads, “Unlock the seal through wisdom, and the next part of the clue will unfold before your eyes.”
+
+[[<span class="twine-link">Unlocking the Tablet|Node 24]]
+
+
+:: Node 23 {"position":"775,1750","size":"100,100"}
+<div style="
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Orchardton_tower_september_2006.jpg/1200px-Orchardton_tower_september_2006.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+   You come to a towering tower, the top of which is hidden in a thick mist. The doors are closed, and intricate symbols are carved into them, symbols that seem to be somehow connected to the symbols on your previous shard.
+
+Just as you observe these symbols, the compass glows faintly once more, seeming to hint at the secrets within the tower.
+
+[[<span class="twine-link">Finding a way to open the tower|Node 25]]
+
+
+:: Node 24 {"position":"1075,1750","size":"100,100"}
+<div style="
+  background: url('https://curiosmos.com/wp-content/uploads/2019/07/A-Standing-Stone-at-Night.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You try to decipher the runes on the stone tablet, and gradually, the meaning of the text becomes clear: “The path to the truth is full of thorns, and only a complete key can unlock the final seal.”
+
+At the same time, the surface of the stone tablet slowly opens, revealing a hidden compartment. You remove a worn map from the hidden compartment, which marks three locations: the Tower, the Heart of the Island, and another unlocked area.
+
+[[<span class="twine-link">Go to the Tower|Node 23]]
+[[<span class="twine-link">Go to Heart of the Island|Node 27]]
+
+
+:: Node 25 {"position":"775,1875","size":"100,100"}
+<div style="
+  background: url('https://killianecastle.com/wp-content/uploads/2023/10/Stone-stairs-inside-Killiane-Tower-House.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You push open the door to the tower and realize that the interior of the tower is occupied by a spiral staircase. Each step is inscribed with symbols, and there seems to be some sort of pattern between the symbols.
+
+At the top of the tower, you find a new shard of metal, the shape of the shard is the same as the previous one, but with different runes etched into its surface.
+
+As you pick up the shard, the whisper in your ear becomes more urgent: “The shards are being assembled, is the truth or the abyss awaiting you ahead?”
+
+[[<span class="twine-link">Return to the chamber to unlock a new seal|Node 26]]
+[[<span class="twine-link">Continue exploring the tower|Node 28]]
+
+
+:: Node 26 {"position":"700,2000","size":"100,100"}
+<div style="
+  background: url('https://www.marwynandjohn.uk/wp-content/uploads/2019/06/20190618_130839.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You return to the chamber and place the second shard into the groove on the stone door. The chamber once again emits a low rumbling sound, and a second pillar of light shoots straight up into the sky.
+
+A low voice echoes in the secret room, “The second seal has been lifted, and the final seal awaits you.”
+
+At that moment, the map in the center of the chamber lights up, marking the location of the Heart of the Island. You realize that this will be the final challenge.
+
+[[<span class="twine-link">Travel to the Heart of the Island|Node 27]]
+[[<span class="twine-link">Back to the forest for more clues|Node 19]]
+
+
+:: Node 27 {"position":"1100,1875","size":"100,100"}
+<div style="
+  background: url('https://i.pinimg.com/736x/2f/54/5a/2f545aa98c3b622810b14b9b45082271.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You follow the map to the center of the island. The mists here are thicker than anywhere else, as if an invisible force is preventing you from approaching.
+
+In the center of the mists, you find a floating altar. There are three grooves on the surface of the altar, the first two shards have been illuminated while the third groove is waiting for the final shard.
+
+The whisper in your ear becomes clearer than ever: “Complete it, and the answer to your destiny will unfold before you.”
+
+[[<span class="twine-link">Place All Shards in Altar|Node 30]]
+
+
+:: Node 28 {"position":"850,2000","size":"100,100"}
+<div style="
+  background: url('https://static.wikia.nocookie.net/elvaria/images/3/35/Ancient-Book-510x250.jpg/revision/latest?cb=20190723042342');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+   Deeper in the tower, you find an ancient journal that has been sealed. The diary details the origins of the Mists and the true purpose of the shards:
+
+“These shards are not only the key to freedom, but also the core that seals the power of the 'Heart of the Island'.”
+
+You realize that after completing the collection of the shards, you will be faced with a great choice.
+
+[[<span class="twine-link">Return to Chamber of Secrets to Continue Exploration|Node 26]]
+[[<span class="twine-link">Travel to the Heart of the Island and meet the challenge|Node 27]]
+
+
+:: Node 3 {"position":"775,500","size":"100,100"}
+<div style="
+  background: url('https://eo.dhigroup.com/wp-content/uploads/sites/9/2018/12/shutterstock_1258261669.jpg')  ;
+    background-size: cover;
+     height: 80vh; 
+">
+Moving along the shoreline, you find a small, battered boat stranded on the beach. The cabin is nearly corroded, and scattered inside are what appear to be abandoned items: a rusty compass, a damp piece of rope, and a seawater-soaked journal.
+
+You flip through the journal and find that only a few pages are still legible, with the vague words, “The Mist is a test that not all can pass.” The next few pages are torn out, leaving only the words “Monolith Mountain” and “Center Area”. Suddenly, there is a muffled sound of footsteps on the beach, but nothing can be seen.
+
+[[<span class="twine-link">Continue along the coast|Node 5]]
+[[<span class="twine-link">Return to Starting Point|End]]
+
+
+
+
+:: Node 30 {"position":"1100,2000","size":"100,100"}
+<div style="
+  background: url('https://i.pinimg.com/736x/2f/54/5a/2f545aa98c3b622810b14b9b45082271.jpg');
+  background-size: cover;
+   height: 80vh; (bg:navy)">
+You place the three pieces into the grooves of the altar in turn. A strong vibration comes from the altar, and three pillars of light shoot straight up into the sky, the mists quickly dissipating to reveal an azure sky.
+
+However, two very different paths appear before you:
+- One leads to freedom, with a ship waiting to set sail in front of you.
+- The other leads to the abyss of the Heart of the Island, from which comes a whispered voice: “The truth is here, but the price may be more than you can imagine.”
+
+Before choosing, you feel a strange familiarity, as if this moment has happened before.
+
+[[<span class="twine-link">Choose Freedom, Leave the Island|Ending: Freedom]]  
+[[<span class="twine-link">Choose Truth, enter the Heart of the Island|Ending: Truth]]  
+[[<span class="twine-link">Go back to the beginning and start again|Node 1]]
+
+
+:: Node 4 {"position":"650,625","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/3/c/d/3cd6eaa5-c3d3-4f8c-a30e-cf2163b0cd52_large/misty-forest-morning-stockcake.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+You walk through a thick grove of trees, the shadows of which grab your attention like a crooked hand. A whispering voice from the mists becomes clearer, “The key lies ahead, but can you bear the cost?”
+
+Strange symbols are scattered on the ground, and you feel a pang of inexplicable familiarity. With each step you take, you feel the forest grow colder, as if guiding you deeper into its heart.
+
+[[<span class="twine-link">Pick Up Symbol|Node 6]]
+[[<span class="twine-link">Continue Deeper|Node 7]]
+
+
+:: Node 5 {"position":"775,625","size":"100,100"}
+<div style="
+  background: url('https://eu-assets.simpleview-europe.com/mournemountains/imageresizer/?image=%2Fdbimgs%2FVMM%20Gallery%20-%20Kilnasaggart%20Stone.jpg&action=FeaturedItemsScroll20193x2') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 70vh; (bg:navy)[Your Text Here]
+
+">
+(bg:(hsl:0,0,0,0.15))[At the end of the coast, a huge stone monument stood in the mist. Ancient words were carved on it, each stroke seemed like it had been carved into by a blade, carrying rough marks.
+“The key consists of three parts, hidden in the forest, the coast and the center area. Time is the most important clue.” There was a groove at the bottom of the tablet, like it was used to hold some sort of object.]
+]]
+[[<span class="twine-link">Touch it|Node 8]]
+[[<span class="twine-link">Leave It|End]]
+
+
+:: Node 6 {"position":"600,750","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/3/c/d/3cd6eaa5-c3d3-4f8c-a30e-cf2163b0cd52_large/misty-forest-morning-stockcake.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+You reach down and pick up the symbol on the ground, and the moment you touch it, a cold, piercing sensation spreads from your fingertips to your entire body. Inscribed on the back of the symbol are the small words, “The first part has been found.” You feel an inexplicable wave of vertigo as your surroundings begin to distort, as if the world is falling apart.
+
+When you wake up again, you are back at the coast, everything around you looks like déjà vu, and the whisper in your ear is clearer than before, “This is the first step.”
+
+[[<span class="twine-link">Return to Forest Exploration|Node 2]]
+[[<span class="twine-link">Explore along the coastline|Node 3]]
+
+
+:: Node 7 {"position":"725,750","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/6/5/7/6576b787-c17a-4744-9892-7717d0f00d58_large/misty-mountain-light-stockcake.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+As you continue on, the mist becomes even thicker, and you can barely see the path beneath your feet. Just then, the scene in front of you suddenly changes, and a blur of light appears in the distance, like the outline of some kind of tower.
+
+“Find it so you can leave.” The whispered voice took on an urgent tone, as if urging you on. But the tower silhouette quickly disappears, and silence returns to the surroundings, as if nothing has happened.
+
+
+[[<span class="twine-link">Finding the direction of the light|Node 9]]
+
+
+:: Node 8 {"position":"900,725","size":"100,100"}
+<div style="
+  background: url('https://www.gameskinny.com/wp-content/uploads/2023/08/baldurs-gate-3-how-to-solve-the-stone-disc-puzzle.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+   height: 80vh; (bg:navy)[Your Text Here]
+
+">You touch the tablet and a strange vibrating sensation comes from the surface. Suddenly, the writing on the tablet begins to glow, and a new line gradually appears, “The sum of the numbers is a clue to the key.” At the same time, you feel a tingling in your fingers, like some force is trying to stop you.
+
+Would you rather try to solve the puzzle, or choose to leave?
+
+
+[[<span class="twine-link">Attempt to solve the puzzle|Node 12]]
+[[<span class="twine-link">Give Up and Leave|End]]
+
+
+
+:: Node 9 {"position":"650,875","size":"100,100"}
+<div style="
+  background: url('https://images.stockcake.com/public/6/5/7/6576b787-c17a-4744-9892-7717d0f00d58_large/misty-mountain-light-stockcake.jpg');
+    background-size: cover;
+         height: 80vh; 
+">
+As you approach the direction where the shadow of the tower is, an old man appears in the mists. His face is wrinkled and his eyes are troubled. He whispers, “The mists are not your enemy, but your trial. The key is hidden deeper, but you must be careful - it will not let you through easily.”
+
+The old man hands you a talisman, inscribed with intricate symbols. He says, “This talisman will protect you, but at the cost of your memories fading.”
+
+
+[[<span class="twine-link">Accept Talisman|Node 10]]
+
+
+:: Node puzzle {"position":"850,1000","size":"100,100"}
+<div style="
+  background: url('https://www.gameskinny.com/wp-content/uploads/2023/08/baldurs-gate-3-how-to-solve-the-stone-disc-puzzle.jpg') no-repeat center ;
+    background-size: cover;
+">
+<p>“The sum of the numbers is a clue to the key.”</p >
+<p>Sequence: 3, 8, 15, 24, ?</p >
+<p>Use your intelligence to solve the sequence and unlock the next part.</p >
+
+
+(set: $answer to "")
+
+
+Type your answer: (input-box: bind $answer)
+
+|button>[<span style="padding: 10px; background: #007BFF; color: white; border-radius: 5px; cursor: pointer;">Submit</span>]
+
+(click: ?button)[
+    (if: $answer is "35")[
+        Correct! You found the key piece.
+        (goto: "Node 14")
+    ]
+    (else:)[
+        Incorrect. Try again.
+    ]
+]
+
+
+:: StoryStylesheet [stylesheet]
+.low-whisper {
+    font-style: italic;
+    color: #b3b3b3;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+  }
+  .twine-link {
+    color: #8ac6d1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .twine-link:hover {
+    color: #f67280;
+    text-shadow: 0 0 5px #f67280;
+  }
+
